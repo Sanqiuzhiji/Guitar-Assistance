@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- 引入静态资源CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>欢迎使用 {{ title }}</h1>
+    <p>您好，{{ name }}！这是基于Flask的网页应用基础框架。</p>
+    <a href="{{ url_for('main.about') }}">查看关于我们</a>
+</div>
+</body>
+</html>
